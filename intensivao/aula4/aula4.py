@@ -1,3 +1,7 @@
 from selenium import webdriver
-import panda as pd
+import pandas as pd
 import time
+
+clientes_df = pd.read_excel('Clientes Pagamento.xlsx', dtype={'Cliente':object})
+#print(clientes_df)
+driver = webdriver.Chrome()
